@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mi-captcha
+    runtime: php
+    plan: free
+    repo: https://github.com/jeremy123-max/Mi_captcha
+    region: oregon
+    rootDir: .
+    buildCommand: ""
+    startCommand: "php -S 0.0.0.0:10000 -t ."
